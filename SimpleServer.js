@@ -2,6 +2,11 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 
+// LiveReload constants, Edit first line
+const liveReloadUrl = "http://localhost:35729/livereload.js";
+
+const liveReloadTag = '<script type="text/javascript" src="' + liveReloadUrl + '"></script>"';
+
 if(!String.prototype.insertAt){
   String.prototype.insertAt = function(index = 0, string = '') {
     if(index>0)
@@ -46,7 +51,12 @@ function read(res, url) {
         res.end('500 Internal error.\n</hr>Contact administrator.');
         return;
       }
-
+	  
+	  // Add LiveReload script tag to all html page before close body tag
+	  if (path.extname(url) == '.html') {
+        data = String(data).insertAt(data.lastIndexOf('</body>'), liveReloadTag);
+      }
+	  
       res.writeHead(200, getType(path.extname(url)));
       res.end(data);
     });
