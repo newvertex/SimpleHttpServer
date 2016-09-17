@@ -2,6 +2,15 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 
+if(!String.prototype.insertAt){
+  String.prototype.insertAt = function(index = 0, string = '') {
+    if(index>0)
+    return this.substring(0, index) + string + this.substring(index, this.length);
+    else
+    return this + string;
+  };
+}
+
 var contentType = {
   '.html' : 'text/html',
   '.js': 'text/javascript',
