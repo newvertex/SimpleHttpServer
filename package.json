@@ -1,6 +1,9 @@
 {
   "name": "simple-http-server",
   "version": "0.0.1",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
   "description": "A Simple Http Server with Node.js for statics files",
   "main": "SimpleServer.js",
   "scripts": {
