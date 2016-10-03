@@ -1,0 +1,19 @@
+{
+  "name": "simple-http-server",
+  "version": "0.0.1",
+  "description": "A Simple Http Server with Node.js for statics files",
+  "main": "SimpleServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newvertex/SimpleHttpServer.git"
+  },
+  "author": "Mojtaba Rabiei <@newvertex>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newvertex/SimpleHttpServer/issues"
+  },
+  "homepage": "https://github.com/newvertex/SimpleHttpServer#readme"
+}

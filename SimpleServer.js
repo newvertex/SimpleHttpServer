@@ -57,7 +57,7 @@ function read(res, url) {
 		data = String(data);
         data = data.insertAt(data.lastIndexOf('</body>'), liveReloadTag);
       }
-console.log(data+'\n');
+
       res.writeHead(200, getType(path.extname(url)));
       res.end(data);
     });
