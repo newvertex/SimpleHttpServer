@@ -1,6 +1,9 @@
 {
   "name": "simple-http-server",
   "version": "0.0.1",
+  "bin": {
+    "server": "./SimpleServer.js"
+  },
   "dependencies": {
     "commander": "^2.9.0"
   },
