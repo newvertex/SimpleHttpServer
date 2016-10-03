@@ -2,7 +2,9 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 let program = require('commander');
+
 const VERSION = require('./package.json').version;
+delete require.cache[require.resolve('./package.json')];
 
 program
   .version(VERSION)
