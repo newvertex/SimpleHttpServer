@@ -67,7 +67,7 @@ function read(res, url) {
       }
 
 	  // Add LiveReload script tag to all html page before close body tag
-	  if (path.extname(url) == '.html') {
+	  if (path.extname(url) == '.html' || path.extname(url) == '.htm') {
 		data = String(data);
         data = data.insertAt(data.lastIndexOf('</body>'), LIVE_RELOAD_TAG);
       }
