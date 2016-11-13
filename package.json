@@ -1,5 +1,5 @@
 {
-  "name": "simple-http-server",
+  "name": "simple-file-server",
   "version": "0.0.1",
   "bin": {
     "server": "./SimpleServer.js"
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/newvertex/SimpleHttpServer.git"
   },
-  "author": "Mojtaba Rabiei <@newvertex>",
+  "author": "Mojtaba Rabiei <mojtaba.r127@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/newvertex/SimpleHttpServer/issues"
